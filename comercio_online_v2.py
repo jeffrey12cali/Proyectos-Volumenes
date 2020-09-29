@@ -142,7 +142,7 @@ head(df)
 
 
 # get correlation matrix
-import seaborn as sns
+#import seaborn as sns
 vector_col = "corr_features"
 assembler = VectorAssembler(inputCols=df.columns, outputCol = vector_col)
 df_vector = assembler.transform(df).select(vector_col)
@@ -204,7 +204,7 @@ while i < row_N:
     matrix_corr.append(list(tmp))
     #i += 1
 #plt.figure(figsize = (13,13))
-ax = sns.heatmap(matrix_corr, square=True, annot=True)
+#ax = sns.heatmap(matrix_corr, square=True, annot=True)
 
 
 # In[125]:
