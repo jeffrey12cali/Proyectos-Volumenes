@@ -5,7 +5,7 @@
 
 
 from pyspark.sql.functions import dayofweek
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import pandas as pd
 from pyspark.ml.stat import Correlation
 from pyspark.ml.classification import RandomForestClassifier
@@ -162,8 +162,8 @@ while i < row_N:
         j += 1
     matrix_corr.append(list(tmp))
     #i += 1
-plt.figure(figsize = (13,13))
-ax = sns.heatmap(matrix_corr, square=True, annot=True)
+#plt.figure(figsize = (13,13))
+#ax = sns.heatmap(matrix_corr, square=True, annot=True)
 
 
 # In[122]:
@@ -203,7 +203,7 @@ while i < row_N:
         j += 1
     matrix_corr.append(list(tmp))
     #i += 1
-plt.figure(figsize = (13,13))
+#plt.figure(figsize = (13,13))
 ax = sns.heatmap(matrix_corr, square=True, annot=True)
 
 
